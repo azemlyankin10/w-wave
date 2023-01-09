@@ -1,0 +1,96 @@
+.footer {
+  background-color: var(--black-2-color);
+  color: var(--white-1-color);
+
+  // .footer__container
+
+  &__container {
+    @include small-tablet {
+      display: block;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  // .footer__container-left
+
+  &__container-left {
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  // .footer__social-list
+
+  &__social-list {
+  }
+
+  // .footer__container-right
+
+  &__container-right {
+    min-width: 500px;
+  }
+
+  // .footer__list
+
+  &__list {
+    @include small-tablet {
+      align-items: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: end;
+    max-height: 100px;
+  }
+
+  // .footer__list-item
+
+  &__list-item {
+    margin-bottom: 20px;
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+    min-width: 100px;
+  }
+
+  // .footer__list-link
+
+  &__list-link {
+  }
+
+  // .footer__wave
+
+  &__wave {
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-image: url('../../img/wave.svg');
+    background-position: center center;
+    margin-bottom: 10px;
+  }
+
+  // .footer__year
+
+  &__year {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 103.34%;
+    color: var(--gray-1-color);
+    padding-bottom: 10px;
+  }
+}

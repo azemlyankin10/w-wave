@@ -1,0 +1,12 @@
+@mixin light-btn {
+  @content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  background: var(--purple-2-color);
+  color: var(--white-1-color);
+}

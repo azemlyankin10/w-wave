@@ -1,0 +1,27 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/podcasts";
+@import "./components/shows";
+@import "./components/guests";
+@import "./components/playlists";
+@import "./components/offer";
+@import "./components/about";
+@import "./components/footer";
+
+// тестовые стили, удалите их
+// .page__body {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: var(--vh);
+// }
+.custom-checkbox {
+  @include custom-checkbox;
+}
